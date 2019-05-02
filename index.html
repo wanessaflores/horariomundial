@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Bem Vindo ao Horário Mundial
+    </title>
+    <link rel="shortcut icon" href="favicon.ico" />
+<script src="https://code.jquery.com/jquery-1.11.2.js"></script>		
+<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+		</script>
+  </head>
+  <body>
+    <p>
+      <font size="10" face="Ariel" color="red">
+      	<i>
+      		Horário Mundial, Alarme, Fuso Horário e Estações do Ano. 
+        </i>
+      </font>
+    </p>
+    <img src="bbf3f2e5cdd213e3502b2bd2e8fd289e.gif">
+    <div>			
+      <output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 24px;">
+      </output>		
+    </div>		
+    <div>			
+      <output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 24px;">
+      </output>				 		
+    </div>	 
+  </body>
+<script>
+		function atualizaRelogio(){ 
+			var momentoAtual = new Date();
+			
+			var vhora = momentoAtual.getHours();
+			var vminuto = momentoAtual.getMinutes();
+			var vsegundo = momentoAtual.getSeconds();
+			
+			var vdia = momentoAtual.getDate();
+			var vmes = momentoAtual.getMonth() + 1;
+			var vano = momentoAtual.getFullYear();
+			
+			if (vdia < 10){ vdia = "0" + vdia;}
+			if (vmes < 10){ vmes = "0" + vmes;}
+			if (vhora < 10){ vhora = "0" + vhora;}
+			if (vminuto < 10){ vminuto = "0" + vminuto;}
+			if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+			dataFormat = vdia + " / " + vmes + " / " + vano;
+			horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+			document.getElementById("data").innerHTML = dataFormat;
+			document.getElementById("hora").innerHTML = horaFormat;
+			setTimeout("atualizaRelogio()",1000);
+		}
+	</script>
+</html>	
