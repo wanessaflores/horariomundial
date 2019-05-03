@@ -1,24 +1,39 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="pt-br">
   <head>
-    <title>Bem Vindo ao Hor·rio Mundial
+	  <meta http-equiv="Content-Type" content="text/html;" />
+
+	<meta http-equiv="Content-Language" content="pt-br">
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" 	 content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Hor√°rio Mundial, Data, Alarme, Fuso Hor√°rio e Esta√ß√µes do Ano">
+
+	<meta name="author" 	 content="Wanessa Flores">
+    <title>Bem Vindo ao Hor√°rio Mundial
     </title>
     <link rel="shortcut icon" href="favicon.ico" />
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://code.jquery.com/jquery-1.11.2.js"></script>		
 <script type="text/javascript">
 			jQuery(window).load(function($){
 				atualizaRelogio();
 			});
 		</script>
+	  <script type="text/javascript" src="js/codigos.js"></script>
   </head>
   <body>
     <p>
-      <font size="10" face="Ariel" color="red">
+      <font id="titulo-pagina">
       	<i>
-      		Hor·rio Mundial, Alarme, Fuso Hor·rio e EstaÁıes do Ano. 
+      		Hor√°rio Mundial, Alarme, Fuso Hor√°rio e Esta√ß√µes do Ano. 
         </i>
       </font>
     </p>
-    <img src="bbf3f2e5cdd213e3502b2bd2e8fd289e.gif">
+   <div><img id="img-mapa" src="img/mapa_mundi_estacoes_ano.gif"></div>
     <div>			
       <output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 24px;">
       </output>		
