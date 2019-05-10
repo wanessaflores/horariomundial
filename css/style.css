@@ -3,7 +3,13 @@
   width: 100%;
 }
 #titulo-pagina {
-  font-size: -webkit-xxx-large;
+  font-size:  72px; 
   font-family: Ariel;
   color: rgb(255, 0, 0);
 }
+.texto-datahora{
+	text-align: center;
+font-family: 'arial black', 'avant garde'; font-size: 48px;
+} 
+.texto-centralizado{text-align: center;
+} 
