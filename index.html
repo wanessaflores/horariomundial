@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-  <head>
-	  <meta http-equiv="Content-Type" content="text/html;" />
+<head>
+	<meta http-equiv="Content-Type" content="text/html;" />
 
 	<meta http-equiv="Content-Language" content="pt-br">
 
@@ -13,49 +13,59 @@
 	<meta name="description" content="Horário Mundial, Data, Alarme, Fuso Horário e Estações do Ano">
 
 	<meta name="author" 	 content="Wanessa Flores">
-    <title>Bem Vindo ao Horário Mundial
-    </title>
-    <link rel="shortcut icon" href="favicon.ico" />
-	  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	<title>Bem Vindo ao Horário Mundial
+	</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TTGMQ5Q');</script>
 <!-- End Google Tag Manager -->
-	  <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://code.jquery.com/jquery-1.11.2.js"></script>		
 <script type="text/javascript">
-			jQuery(window).load(function($){
-				atualizaRelogio();
-			});
-		</script>
-	  <script type="text/javascript" src="js/codigos.js"></script>
-  </head>
-  <body>
-	  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTGMQ5Q"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <p class="texto-centralizado">
-      <font id="titulo-pagina">
-      <marquee scrolldelay="50" behavior="scroll">
-Horário Mundial, Data, Alarme, Fuso Horário e Estações do Ano. 
-</marquee>
-      </font>
-    </p>
-   
-    <div class="texto-centralizado">			
-      <output id="data" class="texto-datahora" >
-      </output>		
-    </div>		
-    <div 	class="texto-centralizado" >	
-      <output id="hora" class="texto-datahora">
-      </output>				 		
-    </div>	 
-    <div><img id="img-mapa" src="img/mapa_mundi_estacoes_ano.gif"></div>
-  </body>
-<script>
+	jQuery(window).load(function($){
+		atualizaRelogio();
+	});
+</script>
+<script type="text/javascript" src="js/codigos.js"></script>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTGMQ5Q"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+<div id="barra-superior" class="dropdown"> 
+	<div id="menu-superior"><button class="dropbtn">Menu</button>
+ <div class="dropdown-content" style="left:0;">
+ <a href="#">Link 1</a>
+ <a href="#">Link 2</a>
+ <a href="#">Link 3</a>
+ </div></div>
+<div id="titulo-pagina" class="texto-centralizado" >HORÁRIO MUNDIAL</div>
+<div id="pesquisa" class="dropdown"><button class="dropbtn">?</button>
+ <div class="dropdown-content">
+ <a href="#">Link 1</a>
+ <a href="#">Link 2</a>
+ <a href="#">Link 3</a>
+ </div></div>
+</div>
+<div id="barra-relogio"> 
+		<div class="texto-centralizado">			
+			<output id="data" class="texto-datahora" >
+			</output>		
+		</div>		
+		<div 	class="texto-centralizado" >	
+			<output id="hora" class="texto-datahora">
+			</output>				 		
+		</div></div>	 
+		<div id="barra-mapa"><img id="img-mapa" src="img/mapa_mundi_estacoes_ano.gif"></div>
+		<div id="barra-rodape">	
+		<div>
+	</body>
+	<script>
 		function atualizaRelogio(){ 
 			var momentoAtual = new Date();
 			
@@ -79,10 +89,10 @@ Horário Mundial, Data, Alarme, Fuso Horário e Estações do Ano.
 			setTimeout("atualizaRelogio()",1000);
 		}
 	</script>
-<script>
-	console.log('I Love You S2');
+	<script>
+		console.log('I Love You S2');
 		console.log('Me to S2');
 
 
-</script>
-</html>	
+	</script>
+	</html>	

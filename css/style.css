@@ -2,14 +2,77 @@
   height: 100%; 
   width: 100%;
 }
+#barra-superior {
+	width: 100%;
+	background-color: blue;
+}
+#barra-relogio {
+	width: 100%;
+	background-color: yellow;
+} 
+#barra-mapa {
+	width: 100%;
+	background-color: green;
+}
+#barra-rodape {
+	width: 100%;
+	background-color: yellow;
+}
+#menu-superior{
+float:left;
+}
+#pesquisa{
+float:right;
+}
 #titulo-pagina {
-  font-size:  72px; 
+  font-size:  50px; 
   font-family: Ariel;
-  color: rgb(255, 0, 0);
+  color: yellow;
 }
 .texto-datahora{
 	text-align: center;
 font-family: 'arial black', 'avant garde'; font-size: 48px;
 } 
-.texto-centralizado{text-align: center;
-} 
+.texto-centralizado{ 
+	text-align: center;
+}  
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
