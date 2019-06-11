@@ -9,6 +9,8 @@
 #barra-relogio {
 	width: 100%;
 	background-color: yellow;
+    clear: both;
+    height: 130px;
 } 
 #barra-mapa {
 	width: 100%;
@@ -25,16 +27,30 @@ float:left;
 float:right;
 }
 #titulo-pagina {
-  font-size:  50px; 
+  font-size:  100px; 
   font-family: Ariel;
   color: yellow;
+    width: 90%;
+    float: left;
 }
 .texto-datahora{
 	text-align: center;
-font-family: 'arial black', 'avant garde'; font-size: 48px;
+    font-family: 'arial black', 'avant garde'; 
+    font-size: 77px;
+    color: red;
 } 
 .texto-centralizado{ 
 	text-align: center;
+}  
+.alinhado-direita{ 
+	float: right;
+    text-align: left;
+    width: 38%;
+}  
+.alinhado-esquerda{
+    float: left;
+	text-align: right;
+    width: 60%;
 }  
 .dropbtn {
   background-color: #4CAF50;
@@ -75,4 +91,8 @@ font-family: 'arial black', 'avant garde'; font-size: 48px;
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
+}
+#div-relogio {
+  width: 150px;
+  height:150px;
 }
